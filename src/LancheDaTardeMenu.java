@@ -6,10 +6,14 @@ import java.util.List;
 public class LancheDaTardeMenu implements Menu {
     
     private List<MenuItem> items = new ArrayList<>();
+    private List<MenuItem> vege = new ArrayList<>();
 
     private void addItem(String nome, String descricao, boolean vegetariano, double preco) {
         MenuItem item = new MenuItem(nome, descricao, vegetariano, preco);
         items.add(item);
+        if(vegetariano ==  true){
+            vege.add(item);
+        }
     }
 
     public LancheDaTardeMenu() {
@@ -21,5 +25,10 @@ public class LancheDaTardeMenu implements Menu {
     @Override
     public Iterator createIterator() {
         return new LancheDaTardeIterator(this.items);
+    }
+
+    @Override
+    public Iterator createIteratorVege() {
+        return new LancheDaTardeIterator(this.vege);
     }
 }

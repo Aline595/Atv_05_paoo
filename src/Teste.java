@@ -17,7 +17,7 @@ public class Teste {
         DinerMenu dm = new DinerMenu();
         LancheDaTardeMenu ltm = new LancheDaTardeMenu();
         Garconete g = null;
-        String menu = "1-Exibir menu geral\n2-Exibir menu de café da manhã\n3-Exibir menu de jantar\n4-Exibir menu de lanche da tarde\n";
+        String menu = "1-Exibir menu geral\n2-Exibir menu de café da manhã\n3-Exibir menu de jantar\n4-Exibir menu de lanche da tarde\n5-Exibir menu vegetariano";
         
         int opcaoCardapio = Integer.parseInt(JOptionPane.showInputDialog(menu));
         switch(opcaoCardapio){
@@ -38,12 +38,11 @@ public class Teste {
                 g = new Garconete(ltm);
                 g.printMenuTarde();
                 break;
-            
+            case 5:
+                g = new Garconete(phm, dm, ltm);
+                g.printMenuVegetariano();
                 
-        }
-        
-        
-        
+        }    
         //garconete.printMenu();
     }
     

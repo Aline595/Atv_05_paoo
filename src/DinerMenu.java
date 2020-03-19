@@ -2,11 +2,15 @@
 public class DinerMenu implements Menu {
 
     private MenuItem[] items = new MenuItem[6];
+    private MenuItem[] vege = new MenuItem[6];
     private int quantidade = 0;
 
     public void addItem(String nome, String descricao, boolean vegetariano, double preco) {
         MenuItem item = new MenuItem(nome, descricao, vegetariano, preco);
         items[quantidade++] = item;
+        if(vegetariano == true){
+            vege[quantidade++] = item;
+        }
     }
 
     @Override
@@ -24,4 +28,9 @@ public class DinerMenu implements Menu {
     /*public MenuItem[] getItems() {
 		return items;
 	}*/
+
+    @Override
+    public Iterator createIteratorVege() {
+        return new DinerMenuIterator(this.vege);
+    }
 }

@@ -4,6 +4,7 @@ public class Garconete {
     private Menu pancakeHouseMenu;
     private Menu dinerMenu;
     private Menu lancheDaTardeMenu;
+    //private Menu vegetariano;
 
     public Garconete(Menu pancakeHouseMenu, Menu dinerMenu, Menu lancheDaTardeMenu) {
         this.pancakeHouseMenu = pancakeHouseMenu;
@@ -46,6 +47,11 @@ public class Garconete {
     
     public void printMenuTarde() {
         printMenu(lancheDaTardeMenu.createIterator());
+    }
+    public void printMenuVegetariano(){
+        printMenu(pancakeHouseMenu.createIteratorVege());
+        printMenu(dinerMenu.createIteratorVege());
+        printMenu(lancheDaTardeMenu.createIteratorVege());
     }
 
     /*public void exibirMenuGeral() {
