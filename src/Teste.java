@@ -24,6 +24,7 @@ public class Teste {
             case 1: 
                 g = new Garconete(phm, dm, ltm);
                 g.printMenu();
+                //System.out.println(g.printMenu());
                 break;
             case 2:
                 g = new Garconete(phm);
@@ -37,6 +38,7 @@ public class Teste {
                 g = new Garconete(ltm);
                 g.printMenuTarde();
                 break;
+            
                 
         }
         

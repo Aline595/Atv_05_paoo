@@ -49,25 +49,26 @@ public class Garconete {
     }
 
     /*public void exibirMenuGeral() {
-		System.out.println("=========Menu Completo=========");
-		for (int i = 0; i < pancakeHouseMenu.getItems().size(); i++) {
-			System.out.println(pancakeHouseMenu.getItems().get(i));
-		}
+	System.out.println("=========Menu Completo=========");
+	for (int i = 0; i < pancakeHouseMenu.getItems().size(); i++) {
+            System.out.println(pancakeHouseMenu.getItems().get(i));
+	}
 
-		for (int i = 0; i < dinerMenu.getItems().length && dinerMenu.getItems()[i] != null; i++) {
-			System.out.println(dinerMenu.getItems()[i]);
-		}
-	}*/
- /*public void exibirMenuVegetariano (){
-		System.out.println("=========Menu Vegetariano=========");
-		for (int i = 0; i < pancakeHouseMenu.getItems().size(); i++) {
-			if (pancakeHouseMenu.getItems().get(i).isVegetariano())
-				System.out.println(pancakeHouseMenu.getItems().get(i));
-		}
+	for (int i = 0; i < dinerMenu.getItems().length && dinerMenu.getItems()[i] != null; i++) {
+            System.out.println(dinerMenu.getItems()[i]);
+	}
+    }*/
+   /*public void exibirMenuVegetariano (){
+        System.out.println("=========Menu Vegetariano=========");
+        for (int i = 0; i < pancakeHouseMenu.getItems().size(); i++) {
+        	if (pancakeHouseMenu.getItems().get(i).isVegetariano())
+                    System.out.println(pancakeHouseMenu.getItems().get(i));
+	}
 		
-		for (int i = 0; i < dinerMenu.getItems().length && dinerMenu.getItems()[i] != null; i++) {
-			if (dinerMenu.getItems()[i].isVegetariano())
-				System.out.println(dinerMenu.getItems()[i]);
-		}
-	}*/
+        for (int i = 0; i < dinerMenu.getItems().length && dinerMenu.getItems()[i] != null; i++) {
+            if (dinerMenu.getItems()[i].isVegetariano()){
+                System.out.println(dinerMenu.getItems()[i]);
+        	}
+        }
+    }*/
 }
